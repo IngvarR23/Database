@@ -1,0 +1,90 @@
+insert into perfomans (psevdonim) values 
+	('Мадонна'),
+	('Элвис Пресли'),
+	('Виктор Цой'),
+	('Моцарт'),
+	('Бах'),
+	('Бетховин'),
+	('Майкл Джексон'),
+	('Боб Марли');
+	
+insert into musical_genres (name) values
+	('Рок'),
+	('Классическая'),
+	('Джаз'),
+	('Шансон'),
+	('Блюз');
+
+insert into albums (name, year)	values
+	('The Very Best of Meat Loaf', 1998),
+	('Bat Out of Hell II: Back into Hell', 1993),
+	('Nevermind', 2001),
+	('Baby One More Time', 1998),
+	('Come On Over', 1997),
+	('Legend', 1984),
+	('Off the Wall', 1979),
+	('Sgt Peppers Lonely Hearts Club Band', 1967);
+
+insert into track (name, duration, album_belongs) values 
+	('The Astronaut', 22, 1),
+	('All Eyes on Me',300, 2),
+	('Daylight', 143, 3),
+	('Calm Down', 17, 3),
+	('Flowers', 45, 4),
+	('Miracle', 56, 4),
+	('Jericho', 432, 5),
+	('Dog Days Are Over', 23, 5),
+	('Substitution', 34, 6),
+	('Rush', 111, 6),
+	('Angel', 98, 7),
+	('TQG', 8, 7),
+	('Favorite Song', 33, 8),
+	('All My life', 58, 8),
+	('Last Night', 65, 8);
+
+insert into compilation (name, year) values 
+	('Русские треки 90', 1990),
+	('Из фильмов "Брат" и "Брат 2', 2001),
+	('Лучшие за 2022', 2022),
+	('National Pop Dance Music', 2023),
+	('Electro House: Selected By Va-Album', 2023),
+	('Мега Дискотека 2021', 2021),
+	('Новое радио', 2005),
+	('Fololow The Dream', 2023);
+
+insert into artists_genres values
+	(1, 1),
+	(2, 2),
+	(3, 3),
+	(4, 2),
+	(5, 5),
+	(6, 1),
+	(7, 5),
+	(8, 4);
+	
+insert into artists_albums values
+	(1, 1),
+	(2, 2),
+	(3, 3),
+	(4, 4),
+	(5, 5),
+	(6, 6),
+	(7, 7),
+	(8, 8);
+
+insert into  track_list values
+	(1, 1),
+	(2, 1),
+	(3, 2),
+	(4, 2),
+	(5, 3),
+	(6, 3),
+	(7, 3),
+	(8, 4),
+	(9, 5),
+	(10, 5),
+	(11, 6),
+	(12, 7),	
+	(13, 7),
+	(14, 8),
+	(15, 8);

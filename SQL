@@ -1,0 +1,48 @@
+create table if not exists musical_genres (
+	id SERIAL primary key,
+	name varchar(60) not null
+);
+
+create table if not exists perfomans (
+	id SERIAL primary key,
+	psevdonim varchar(60) not null
+	);
+
+create table if not exists albums (
+	id SERIAL primary key,
+	name varchar(60) not null,
+	year integer not null
+);
+
+create table if not exists track (
+	id SERIAL primary key,
+	name varchar(60) not null,
+	duration varchar(60) not null,
+	album_belongs integer not null references albums(id)
+);
+
+create table if not exists compilation (
+	id SERIAL primary key,
+	name varchar(60) not null,
+	year integer not null
+);
+
+create table if not exists artists_genres (
+	artists_id integer references perfomans(id),
+	genres_id integer references musical_genres(id),
+	constraint PK primary key (artists_id, genres_id)
+);	
+
+create table if not exists artists_albums (
+	album_id integer references albums(id),
+	artist_id integer references perfomans(id),
+	constraint PK1 primary key (album_id, artist_id)
+);
+
+create table if not exists track_list (
+	track_id integer references track(id),
+	list_id integer references compilation(id),
+	constraint PK2 primary key (track_id, list_id)
+);	
+
+	

@@ -1,0 +1,14 @@
+select name, year from albums 
+where year = 2018;
+select name, duration from track 
+order by duration desc limit 1;
+select name, duration from track 
+where duration >= 210;
+select name, from compilation 
+where year between 2018 and 2020;
+select psevdonim, from perfomans 
+where psevdonim not like '% %';
+select name, for track
+where like '%мой%' or name like '%my%';
+
+
